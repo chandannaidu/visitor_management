@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>logser</servlet-name>
+        <servlet-class>logser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>pwd</servlet-name>
+        <servlet-class>cng</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>logincng</servlet-name>
+        <servlet-class>logincng</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>welcome</servlet-name>
+        <servlet-class>welcome</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logser</servlet-name>
+        <url-pattern>/logser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>pwd</servlet-name>
+        <url-pattern>/pwd</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logincng</servlet-name>
+        <url-pattern>/logincng</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>welcome</servlet-name>
+        <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>
+          loginpage.jsp
+        </welcome-file>
+    </welcome-file-list>
+</web-app>
